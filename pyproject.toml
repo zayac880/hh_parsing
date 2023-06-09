@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "kurs-work-parsing"
+version = "0.1.0"
+description = ""
+authors = ["Alex <zayac880880@mail.ru>"]
+readme = "README.md"
+packages = [{include = "kurs_work_parsing"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
