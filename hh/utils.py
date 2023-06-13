@@ -25,7 +25,7 @@ def save_vacancies(vacancy_saver, vacancies):
         print("Некорректный номер вакансии.")
     else:
         vacancy = vacancies[number - 1]
-        vacancy_saver.insert(vacancy)  # Сохраняем выбранную вакансию в JSON файл
+        vacancy_saver.insert(vacancy)
 
 
 def show_saved_vacancies(vacancy_saver):
@@ -53,5 +53,5 @@ def show_saved_vacancies(vacancy_saver):
         elif delete_number < 1 or delete_number > len(saved_vacancies):
             print("Некорректный номер вакансии.")
         else:
-            vacancy_saver.delete(delete_number - 1)  # Удаляем выбранную вакансию из JSON файла
+            vacancy_saver.delete(delete_number - 1)
             print("Вакансия удалена.")
